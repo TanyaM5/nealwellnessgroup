@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Neal Wellness Group | Mental Health Counseling in San Antonio, TX 
+</title>
+
+<link rel="icon" type="image/png" href="pictures/favicon.png">
+
+<meta name="description" content="Neal Wellness Group provides compassionate mental health counseling, behavioral health services, trauma-informed care, and wellness support for individuals and families in San Antonio, Texas.">
+<meta name="author" content="Neal Wellness Group">
+<meta name="geo.region" content="US-TX">
+<meta name="geo.placename" content="San Antonio">
+<meta name="geo.position" content="29.4241;-98.4936">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neal Wellness Group | Mental Health Services">
+<meta name="twitter:description" content="Mental health counseling and wellness support in San Antonio, Texas.">
+<meta name="twitter:image" content="https://www.nealwellnessgroup.com/pictures/wellness.webp">
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" href="pictures/favicon.png">
+<link rel="canonical" href="https://www.nealwellnessgroup.com/">
+
+<meta property="og:title" content="Neal Wellness Group | Mental Health Counseling San Antonio">
+<meta property="og:description" content="Compassionate mental health counseling, behavioral health services, and wellness support in San Antonio, Texas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.nealwellnessgroup.com">
+<meta property="og:image" content="https://www.nealwellnessgroup.com/pictures/wellness.webp">
+<style>
+
+    /* ==========================================
+       1. CSS VARIABLES
+    ========================================== */
+    
+    :root{
+        --primary:#1E5A73;
+        --secondary:#6BBF9B;
+        --accent:#D8EFE8;
+        --light:#F7FAFC;
+        --dark:#24323D;
+    }
+    
+    .about-content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.about-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+    /* ==========================================
+       2. RESET
+    ========================================== */
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    
+    html{
+        scroll-behavior:smooth;
+    }
+    
+    body{
+        font-family:"Segoe UI", Arial, sans-serif;
+        background:var(--light);
+        color:var(--dark);
+        line-height:1.6;
+    }
+    
+    /* ==========================================
+       3. LAYOUT
+    ========================================== */
+    
+    section{
+        padding:80px 8%;
+    }
+    
+    .container{
+        width:min(1200px,100%);
+        margin:auto;
+    }
+    .skip-link{
+    position:absolute;
+    left:-9999px;
+    top:auto;
+}
+
+.skip-link:focus{
+    left:20px;
+    top:20px;
+    background:#fff;
+    color:#000;
+    padding:12px 20px;
+    z-index:2000;
+}
+    
+    /* ==========================================
+       4. NAVIGATION
+    ========================================== */
+    
+    nav{
+        background:var(--primary);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 8%;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    }
+    
+    nav div{
+        display:flex;
+        align-items:center;
+        gap:20px;
+    }
+    
+    nav a{
+        color:#fff;
+        text-decoration:none;
+        font-weight:600;
+        transition:.3s;
+    }
+    
+    nav a:hover{
+        color:var(--accent);
+    }
+    
+    .nav-button{
+        background:var(--secondary);
+        color:#fff;
+        padding:10px 22px;
+        border-radius:30px;
+        text-decoration:none;
+        display:inline-block;
+    }
+    .cta-section {
+    background-color: #eaf4f2;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: #163f3a;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    color: #365955;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2f6f67;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #245951;
+}
+    
+    /* ==========================================
+       5. HERO
+    ========================================== */
+    
+    .hero{
+        min-height:650px;
+        background:
+            linear-gradient(
+                rgba(30,90,115,.85),
+                rgba(30,90,115,.85)
+            ),
+            url("pictures/wellness.webp");
+        background-size:cover;
+        background-position:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:#fff;
+        padding:40px;
+    }
+    
+    /* ==========================================
+       6. BUTTONS
+    ========================================== */
+    
+    .btn{
+        background:var(--secondary);
+        color:#fff;
+        padding:15px 35px;
+        border-radius:30px;
+        text-decoration:none;
+        display:inline-block;
+    }
+    
+    button{
+        background:var(--secondary);
+        color:#fff;
+        border:none;
+        padding:15px 35px;
+        border-radius:30px;
+        cursor:pointer;
+        width:100%;
+        font-size:16px;
+        font-weight:600;
+    }
+    
+    button,
+    .btn,
+    .nav-button{
+        transition:.3s ease;
+    }
+    
+    button:hover,
+    .btn:hover,
+    .nav-button:hover{
+        background:#57ad87;
+        transform:translateY(-2px);
+    }
+    
+    /* ==========================================
+       7. CARDS
+    ========================================== */
+    
+    .services{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:30px;
+    }
+    
+    .card{
+        background:#fff;
+        padding:30px;
+        border-radius:18px;
+        box-shadow:0 8px 25px rgba(0,0,0,.08);
+        transition:.3s;
+    }
+    
+    .card:hover{
+        transform:translateY(-6px);
+    }
+    
+    .card h3{
+        color:var(--primary);
+        margin-bottom:15px;
+    }
+    
+  /* ==========================================
+   8. PROVIDERS
+========================================== */
+
+.provider-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.provider-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.provider-card:hover{
+    transform:translateY(-6px);
+}
+
+.provider-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:4px solid var(--accent);
+}
+
+.provider-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.provider-card p{
+    margin-bottom:10px;
+}
+
+.provider-card img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+    /* ==========================================
+       9. FORMS
+    ========================================== */
+    
+    .form-box{
+        max-width:700px;
+        margin:auto;
+        background:#fff;
+        padding:40px;
+        border-radius:20px;
+        box-shadow:0 8px 25px rgba(0,0,0,.08);
+    }
+    
+    input,
+    textarea,
+    select{
+        width:100%;
+        padding:14px;
+        margin-bottom:18px;
+        border:1px solid #ddd;
+        border-radius:8px;
+        font-size:16px;
+    }
+    
+    textarea{
+        min-height:120px;
+    }
+    
+    /* ==========================================
+       10. TYPOGRAPHY
+    ========================================== */
+    
+    .section-title{
+        text-align:center;
+        color:var(--primary);
+        font-size:2.3rem;
+        margin-bottom:50px;
+    }
+    
+    /* ==========================================
+       11. ACCESSIBILITY
+    ========================================== */
+    
+    input:focus,
+    textarea:focus,
+    select:focus{
+        outline:3px solid var(--secondary);
+        border-color:var(--secondary);
+    }
+    
+    a:focus,
+    button:focus{
+        outline:3px solid var(--secondary);
+        outline-offset:3px;
+    }
+    
+    /* ==========================================
+       12. FOOTER
+    ========================================== */
+    
+    footer{
+        background:var(--primary);
+        color:#fff;
+        text-align:center;
+        padding:30px;
+    }
+    
+    /* ==========================================
+       13. MOBILE
+    ========================================== */
+    
+    @media (max-width:700px){
+    
+        nav{
+            flex-direction:column;
+            gap:15px;
+        }
+    
+        nav div{
+            flex-direction:column;
+            gap:10px;
+        }
+    
+        .hero{
+            min-height:500px;
+            padding:30px 20px;
+        }
+    
+        .section-title{
+            font-size:2rem;
+        }
+    
+    }
+    .hero {
+    background-image: url("images/peaceful-sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+}
+    
+    </style>
+    </head>
+<body>
+
+    <nav>
+
+            <div class="logo">
+            <a href="/">Neal Wellness Group</a>
+            </div>
+            
+            <div>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#providers">Providers</a>
+            <a href="#appointment">Appointment</a>
+            
+            <a href="tel:+12103334445" class="nav-button">
+            Call Now
+            </a>
+            
+            </div>
+            
+            </nav>
+
+        <!-- SERVICES -->
+        
+        <section id="services">
+        
+        <h2 class="section-title">
+        Our Services
+        </h2>
+
+<div class="services">
+
+<div class="card">
+
+<h3>
+Individual Counseling
+</h3>
+
+<p>
+Personalized support focused on emotional wellness,
+growth, and life goals.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Behavioral Health
+</h3>
+
+<p>
+Evidence-based support designed to improve
+mental and emotional wellbeing.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Trauma-Informed Care
+</h3>
+
+<p>
+A safe and supportive approach centered around
+healing and recovery.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Substance Abuse Support
+</h3>
+
+<p>
+Compassionate recovery services helping clients
+build healthier futures.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Family Support
+</h3>
+
+<p>
+Helping families strengthen communication,
+relationships, and resilience.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Justice-Involved Support
+</h3>
+
+<p>
+Wellness services supporting individuals navigating
+life transitions.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="section-title">
+About Neal Wellness Group
+</h2>
+
+<p>
+
+Neal Wellness Group provides compassionate mental health
+and wellness services designed to support individuals and
+families through life's challenges.
+
+Our mission is to provide respectful, personalized care
+that promotes healing, emotional wellness, and positive
+life changes.
+
+</p>
+
+</section>
+
+<!-- PROVIDERS -->
+
+
+<section id="providers">
+
+    <h2 class="section-title">
+    Our Providers
+    </h2>
+    
+    
+    <div class="provider-grid">
+    
+    
+        <div class="provider-card">
+
+            <h3>
+            K. Neal
+            </h3>
+            
+            <p>
+            Licensed Mental Health Professional
+            </p>
+            
+            <p>
+            Specializing in counseling, wellness,
+            and client-centered care.
+            </p>
+            
+            </div>
+            
+            
+            <div class="provider-card">
+            
+            <h3>
+            T. Richardson
+            </h3>
+            
+            <p>
+            Behavioral Health Specialist
+            </p>
+            
+            <p>
+            Dedicated to helping clients develop
+            healthy coping strategies.
+            </p>
+            
+            </div>
+            
+            
+            <div class="provider-card">
+            
+            <h3>
+            R. Smith
+            </h3>
+            
+            <p>
+            Clinical Support Specialist
+            </p>
+            
+            <p>
+            Focused on compassionate care and
+            individual growth.
+            </p>
+            
+            </div>
+    
+    
+    </section>
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose Neal Wellness Group
+</h2>
+
+<div class="services">
+
+<div class="card">
+
+<h3>
+Compassionate Care
+</h3>
+
+<p>
+Every client receives respectful,
+personalized support.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Experienced Professionals
+</h3>
+
+<p>
+Our team is committed to quality
+mental health services.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Individualized Treatment
+</h3>
+
+<p>
+Care plans designed around your
+unique needs and goals.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- APPOINTMENT FORM -->
+
+<div class="appointment"></div>
+    <div class="appointment-form">
+        <!-- Form -->
+    </div>
+
+<section id="appointment">
+
+<h2 class="section-title">
+Request an Appointment
+</h2>
+
+    <div class="form-box">
+    
+    
+     <form 
+      action="submit.php"
+      method="post"
+      aria-label="Appointment request form">
+    
+    <label for="name">
+    Full Name
+    </label>
+        
+    <input
+    id="name"
+    name="name"
+    type="text"
+    placeholder="Enter your full name"
+    required>
+    
+    <label for="phone">
+    Phone Number
+    </label>
+    
+    <input
+    id="phone"
+    name="phone"
+    type="tel"
+    placeholder="Enter your phone number"
+    required>
+    
+    <label for="email">
+    Email Address
+    </label>
+    
+    <input
+    id="email"
+    name="email"
+    type="email"
+    placeholder="Enter your email address"
+    required>
+    
+    <label for="service">
+    Service Needed
+    </label>
+    
+   <select id="service" name="service" required>
+    <option value="">
+
+    Select Service Needed
+    </option>
+    
+    <option>
+    Individual Counseling
+    </option>
+    
+    <option>
+    Behavioral Health
+    </option>
+    
+    <option>
+    Trauma-Informed Care
+    </option>
+    
+    <option>
+    Substance Abuse Support
+    </option>
+    
+    <option>
+    Family Support
+    </option>
+    
+    </select>
+    
+    <label for="message">
+    How Can We Help?
+    </label>
+    
+    <textarea
+    id="message"
+    name="message"
+    placeholder="Tell us how we can help">
+    </textarea>
+    
+    <!-- Honeypot Spam Protection -->
+    
+    <input 
+    type="text"
+    name="website"
+    style="position:absolute;left:-9999px;"
+    tabindex="-1"
+    autocomplete="off">
+    
+    <button type="submit">
+    Submit Request
+    </button>
+    
+    </form>
+    
+    </div>
+    
+    </section>
+<!-- INSURANCE SECTION -->
+
+    <!-- NAVIGATION -->
+
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Support for Your Journey. Strength for Your Future.</h2>
+            <p>
+                Compassionate, personalized mental health and wellness services
+                designed to support individuals, families, and communities
+                through life's challenges.
+            </p>
+        </div>
+    </section>
+<!-- INSURANCE SECTION -->
+
+<section>
+
+    <h2 class="section-title">
+    Insurance Accepted
+    </h2>
+        
+    <div class="services">
+    
+    <div class="card">
+        <h3>Aetna Insurance</h3>
+    <p>Accepted insurance plans available.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Blue Cross Blue Shield Insurance</h3>
+    <p>Contact our office for coverage details.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Cigna Insurance</h3>
+    <p>Coverage options may be available.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Medicaid Insurance</h3>
+    <p>Ask about eligible services.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Medicare Insurance</h3>
+    <p>Coverage verification available.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Humana Insurance</h3>
+    <p>Contact us to verify benefits.</p>
+    </div>
+    
+    </div>
+    
+    </section>
+
+ <!-- CONTACT SECTION -->
+
+<section id="contact" class="about">
+
+    <h2 class="section-title">
+    Contact Us
+    </h2>
+        
+    <div class="form-box">
+    
+    <p>
+    <strong>📞 Phone:</strong><br>
+    
+    <a href="tel:+12103334445">
+    210-333-4445
+    </a>
+    
+    </p>
+    
+    <br>
+    
+    <p>
+    
+    <strong>✉ Email:</strong><br>
+    
+    <a href="mailto:info@nealwellnessgroup.com">info@nealwellnessgroup.com</a>
+    
+    
+    </p>
+    
+    <br>
+    
+    <p>
+    
+    <strong>📍 Location:</strong><br>
+    
+    123 Wellness Drive<br>
+    
+    San Antonio, TX 78201
+    
+    </p>
+    
+    <br>
+        <p>
+    
+    <strong>Business Hours:</strong><br>
+    
+    Monday - Friday: 8:00 AM - 6:00 PM<br>
+    
+    Saturday: By Appointment<br>
+    
+    Sunday: Telehealth Only
+    
+    </p>
+    
+    </div>
+    
+    </section>
+    
+    <!-- PATIENT INFORMATION -->
+    
+    <section>
+    
+    <h2 class="section-title">
+    Patient Information
+    </h2>
+    
+    <div class="services">
+    
+    <div class="card">
+    
+    <h3>
+    Confidential Care
+    </h3>
+    
+    <p>
+    Your privacy and comfort are important.
+    Our team provides respectful and confidential
+    support.
+    </p>
+    
+    </div>
+    
+    <div class="card">
+    
+    <h3>
+    Telehealth Options
+    </h3>
+    
+    <p>
+    Virtual appointments may be available for
+    qualified services.
+    </p>
+    
+    </div>
+    
+    <div class="card">
+    
+    <h3>
+    Flexible Support
+    </h3>
+    
+    <p>
+    We work with clients to find care options
+    that fit their needs.
+    </p>
+    
+    </div>
+
+    </div>
+    
+    </section>
+    
+    <!-- EMERGENCY NOTICE -->
+    
+    <section class="about">
+    
+    <h2 class="section-title">
+    Important Notice
+    </h2>
+    
+    <p>
+    
+    Neal Wellness Group provides mental health and wellness
+    services. If you are experiencing an emergency or are in immediate danger, please call 911 or seek emergency assistance.
+    </p>
+    
+    </section>
+    
+  <!-- SOCIAL MEDIA -->
+
+<section>
+
+    <h2 class="section-title">
+    Connect With Us
+    </h2>
+    
+    <div class="social">
+    
+        <a href="https://facebook.com/yourpage">Facebook</a>
+
+    <a href="https://instagram.com/yourpage">Instagram</a>
+
+    <a href="https://tiktok.com/@yourpage">TikTok</a>
+
+    <a href="https://youtube.com/@yourpage">YouTube</a>
+    
+    </section>
+
+    <!-- FOOTER -->
+
+<footer>
+
+    <p>
+    © 2026 Neal Wellness Group. All Rights Reserved.
+    </p>
+    
+    <p>
+    Mental Health & Wellness Services
+    <br>
+    San Antonio, Texas
+    </p>
+    
+    </footer>
+
+   
+    <script type="application/ld+json">
+
+        {
+         "@context":"https://schema.org",
+         "@type":"MedicalBusiness",
+         "name":"Neal Wellness Group",
+         "description":"Mental health counseling, behavioral health services, trauma-informed care, and wellness support in San Antonio, Texas.",
+         "telephone":"+1-210-333-4445",
+         "address":{
+            "@type":"PostalAddress",
+            "streetAddress":"123 Wellness Drive",
+            "addressLocality":"San Antonio",
+            "addressRegion":"TX",
+            "postalCode":"78201",
+            "addressCountry":"US"
+         },
+         "areaServed":{
+            "@type":"City",
+            "name":"San Antonio"
+         },
+         "openingHours":"Mo-Fr 08:00-18:00"
+        }
+        </script> 
+</body>
+
+</html>
+   
