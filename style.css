@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 }
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-color: #f4f8f7;
+background-color: #e8f1ef;
 color: #263b3a;
 line-height: 1.7;
 }
@@ -32,7 +32,7 @@ color: inherit;
 }
 
 section {
-background-color: #ffffff;
+background-color: #f8fbfa;
 padding: 70px 30px;
 margin: 25px auto;
 max-width: 1100px;
